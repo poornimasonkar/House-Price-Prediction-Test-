@@ -1,0 +1,20 @@
+body {
+    background-color: #f4f9ff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #0077b6;
+}
+
+.stButton > button {
+    background-color: #00b4d8;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.stNumberInput input {
+    border: 2px solid #90e0ef;
+    border-radius: 4px;
+}
