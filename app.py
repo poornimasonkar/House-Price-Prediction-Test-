@@ -24,20 +24,19 @@ st.markdown("Built with **Machine Learning** and **Streamlit**")
 st.header("📝 Enter House Details")
 
 # Input fields
-CRIM = st.number_input("CRIM: Per capita crime rate", min_value=0.0, format="%.2f")
-ZN = st.number_input("ZN: Proportion of residential land zoned for lots over 25,000 sq.ft.", min_value=0.0, format="%.2f")
-INDUS = st.number_input("INDUS: Proportion of non-retail business acres", min_value=0.0, format="%.2f")
-CHAS = st.selectbox("CHAS: Charles River dummy variable (1 if tract bounds river; 0 otherwise)", options=[0, 1])
-NOX = st.number_input("NOX: Nitric oxides concentration (parts per 10 million)", min_value=0.0, max_value=1.0, format="%.2f")
-RM = st.number_input("RM: Average number of rooms per dwelling", min_value=0.0, format="%.2f")
-AGE = st.number_input("AGE: Proportion of owner-occupied units built prior to 1940", min_value=0.0, max_value=100.0, format="%.2f")
-DIS = st.number_input("DIS: Weighted distance to five Boston employment centers", min_value=0.0, format="%.2f")
-RAD = st.number_input("RAD: Index of accessibility to radial highways", min_value=1, max_value=24)
-TAX = st.number_input("TAX: Full-value property-tax rate per $10,000", min_value=0.0, format="%.2f")
-PTRATIO = st.number_input("PTRATIO: Pupil-teacher ratio by town", min_value=0.0, format="%.2f")
-B = st.number_input("B: 1000(Bk - 0.63)^2 where Bk is proportion of blacks by town", min_value=0.0, format="%.2f")
-LSTAT = st.number_input("LSTAT: % Lower status of the population", min_value=0.0, format="%.2f")
-
+CRIM = st.number_input("CRIM: Per capita crime rate", min_value=0.0, format="%.2f", key="crim")
+ZN = st.number_input("ZN: Proportion of residential land zoned for lots over 25,000 sq.ft.", min_value=0.0, format="%.2f", key="zn")
+INDUS = st.number_input("INDUS: Proportion of non-retail business acres", min_value=0.0, format="%.2f", key="indus")
+CHAS = st.selectbox("CHAS: Charles River dummy variable (1 if tract bounds river; 0 otherwise)", options=[0, 1], key="chas")
+NOX = st.number_input("NOX: Nitric oxides concentration (parts per 10 million)", min_value=0.0, max_value=1.0, format="%.2f", key="nox")
+RM = st.number_input("RM: Average number of rooms per dwelling", min_value=0.0, format="%.2f", key="rm")
+AGE = st.number_input("AGE: Proportion of owner-occupied units built prior to 1940", min_value=0.0, max_value=100.0, format="%.2f", key="age")
+DIS = st.number_input("DIS: Weighted distance to five Boston employment centers", min_value=0.0, format="%.2f", key="dis")
+RAD = st.number_input("RAD: Index of accessibility to radial highways", min_value=1, max_value=24, key="rad")
+TAX = st.number_input("TAX: Full-value property-tax rate per $10,000", min_value=0.0, format="%.2f", key="tax")
+PTRATIO = st.number_input("PTRATIO: Pupil-teacher ratio by town", min_value=0.0, format="%.2f", key="ptratio")
+B = st.number_input("B: 1000(Bk - 0.63)^2 where Bk is proportion of blacks by town", min_value=0.0, format="%.2f", key="b")
+LSTAT = st.number_input("LSTAT: % Lower status of the population", min_value=0.0, format="%.2f", key="lstat")
 # Predict Button
 if st.button("💰 Predict House Price"):
     # Create dataframe from inputs
