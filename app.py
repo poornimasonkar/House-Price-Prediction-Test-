@@ -135,6 +135,4 @@ with st.expander("ℹ️ About this App"):
     - 🧠 Model: Linear Regression, Random Forest Regressor, XGBoost Regressor
     - 🧪 Tools: Pandas, scikit-learn, Streamlit, Matplotlib, numpy, seaborn
     - 👩‍💻 Created by Poornima Sonkar
-    -GitHub: [poornimasonkar]
-    -Linkedin: [linkedin.com/in/poornima-sonkar-8507692b5]
     """)
